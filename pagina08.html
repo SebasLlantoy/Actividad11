@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacidad (color)</title>
+    <style>
+        #recuadro1 {
+            background-color: black; /* Original color, assuming no rgba here directly */
+            color: #f00; /* Original color */
+            width: 700px;
+            height: 450px;
+            border-radius: 15px;
+            font-size: 45px; /* Different font-size from pagina07.html */
+            /* No opacity property on the div itself */
+            margin-bottom: 20px; /* Added for visual separation */
+        }
+
+        #recuadro2 {
+            background-color: black; /* Original color, assuming no rgba here directly */
+            color: #f00; /* Original color */
+            width: 700px;
+            height: 450px;
+            border-radius: 15px;
+            font-size: 45px; /* Different font-size from pagina07.html */
+            margin-top: 10px; /* Specific margin-top for recuadro2 */
+            margin-bottom: 20px; /* Added for visual separation */
+        }
+
+        .texto1 {
+            color: rgb(255, 255, 0); /* Texto amarillo opaco (no transparente) */
+            padding: 10px;
+            margin-top: 20px; /* Added for visual separation */
+        }
+
+        .texto2 {
+            color: rgba(255, 255, 0, 0.5); /* Texto amarillo con 50% de opacidad */
+            padding: 10px;
+            margin-top: 20px; /* Added for visual separation */
+        }
+
+        /* Assuming similar structure for recuadro3, recuadro4, recuadro5 if they exist in this page,
+           based on previous pagina07.html structure. No explicit styles for them with rgba in these images. */
+        #recuadro3, #recuadro4, #recuadro5 {
+            background-color: black;
+            color: #f00;
+            width: 700px;
+            height: 450px;
+            border-radius: 15px;
+            font-size: 30px; /* Assuming 30px for these, as seen in previous examples for similar elements */
+            margin-bottom: 20px;
+        }
+
+        body {
+            background: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="recuadro1">
+        <h3>Recuadro 1 (color sin transparencia)</h3>
+        <p class="texto1">Este es un párrafo con la clase .texto1. Su color de texto es amarillo sin transparencia (RGB).</p>
+    </div>
+
+    <div id="recuadro2">
+        <h3>Recuadro 2 (color con transparencia)</h3>
+        <p class="texto2">Este es un párrafo con la clase .texto2. Su color de texto es amarillo con 50% de transparencia (RGBA).</p>
+    </div>
+
+    <div id="recuadro3">
+        <h3>Recuadro 3</h3>
+        <p>Contenido del recuadro 3.</p>
+    </div>
+
+    <div id="recuadro4">
+        <h3>Recuadro 4</h3>
+        <p>Contenido del recuadro 4.</p>
+    </div>
+
+    <div id="recuadro5">
+        <h3>Recuadro 5</h3>
+        <p>Contenido del recuadro 5.</p>
+    </div>
+
+</body>
+</html>
